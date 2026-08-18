@@ -5,7 +5,6 @@
 .DS_Store
 
 # VS Code configuration dir
-.vscode/
 
 # Jupyter Notebook cache files
 .ipynb_checkpoints/
@@ -44,3 +43,5 @@ wandb/
 /checkpoints/
 !/assets/*
 .cog
+config.bat
+node_modules
