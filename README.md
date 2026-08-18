@@ -193,3 +193,30 @@ You can evaluate the accuracy of SyncNet on a dataset by running the following s
 - Some code are borrowed from [MuseTalk](https://github.com/TMElyralab/MuseTalk), [StyleSync](https://github.com/guanjz20/StyleSync), [SyncNet](https://github.com/joonson/syncnet_python), [Wav2Lip](https://github.com/Rudrabha/Wav2Lip).
 
 Thanks for their generous contributions to the open-source community.
+
+---
+
+## LatentSync v1.5 — Issue #107 Fix
+
+This repository is based on:
+
+- `lucataco/cog-LatentSync`
+
+and includes the face detection fix from:
+
+- `stormotron/comfyui-av-latentsync-v1.5-fixed-issue-107`
+
+The fix addresses:
+
+- `bytedance/LatentSync#107`
+- "Face not detected" failures
+
+Patched files:
+
+- `latentsync/utils/affine_transform.py`
+- `latentsync/utils/image_processor.py`
+
+The `face-alignment` Python package is also included as required by the fix.
+
+This repository keeps the original Cog/Replicate inference interface from
+`lucataco/cog-LatentSync`.
